@@ -1,2 +1,2 @@
 # charlesed76.github.io
-<a href="modification.html" class="box">Professeurs absents</a>
+<a href="modification.html" class="box">Modification affichage tv</a>
