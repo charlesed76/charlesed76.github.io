@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const startDateLabel = document.createElement('label');
         startDateLabel.textContent = 'Début de l\'absence:';
         const startDateInput = document.createElement('input');
-        startDateInput.type = 'text';
+        startDateInput.type = 'date';
         startDateInput.name = 'startDate'; // Ajout du nom pour une identification unique
 
         const endDateLabel = document.createElement('label');
         endDateLabel.textContent = 'Fin de l\'absence:';
         const endDateInput = document.createElement('input');
-        endDateInput.type = 'text';
+        endDateInput.type = 'date';
         endDateInput.name = 'endDate'; // Ajout du nom pour une identification unique
 
         const removeButton = document.createElement('button');
