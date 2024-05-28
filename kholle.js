@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const dateLabel = document.createElement('label');
         dateLabel.textContent = 'Date:';
         const dateInput = document.createElement('input');
-        dateInput.type = 'text';
+        dateInput.type = 'date';
 
         const roomLabel = document.createElement('label');
         roomLabel.textContent = 'Salle:';
