@@ -1,20 +1,28 @@
-/* kholle.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    color: black;
 }
 
 .navbar {
-    background-color: #004d86; /* Couleur bleue */
+    background-color: #004d86;
     padding: 20px;
     text-align: center;
+    position: relative;
+    color: white;
 }
 
 .navbar h1 {
     margin: 0;
-    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
 }
 
 .container {
@@ -24,19 +32,12 @@ body {
     margin-top: 50px;
 }
 
-.button {
-    background-color: #004d86;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
-.button:hover {
-    background-color: #003f6a; /* Changement de couleur au survol */
+#kholleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .kholle {
@@ -44,14 +45,17 @@ body {
     border: 2px solid #004d86;
     border-radius: 10px;
     padding: 20px;
-    margin: 10px;
     width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .kholle label {
-    display: block;
     margin: 10px 0 5px;
+    font-weight: bold;
 }
 
 .kholle input {
@@ -77,8 +81,26 @@ body {
     background-color: #e43e3e;
 }
 
-#kholleContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrer les éléments horizontalement */
+#addKholleBtn {
+    align-self: center;
+}
+
+.button {
+    background-color: #004d86;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #003f6a;
+}
+
+#addKholleBtn {
+
+    margin-bottom: -5px;
 }
