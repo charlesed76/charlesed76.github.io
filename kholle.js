@@ -1,8 +1,8 @@
-// kholles.js
 document.addEventListener('DOMContentLoaded', function() {
     const kholleContainer = document.getElementById('kholleContainer');
     const addKholleBtn = document.getElementById('addKholleBtn');
     const saveKholleBtn = document.getElementById('saveKholleBtn');
+    const viewKholleBtn = document.getElementById('viewKholleBtn');
     const returnBtn = document.getElementById('returnBtn');
 
     // Ajouter une kholle
@@ -14,21 +14,25 @@ document.addEventListener('DOMContentLoaded', function() {
         dayLabel.textContent = 'Jour:';
         const dayInput = document.createElement('input');
         dayInput.type = 'text';
+        dayInput.name = 'day';
 
         const dateLabel = document.createElement('label');
         dateLabel.textContent = 'Date:';
         const dateInput = document.createElement('input');
         dateInput.type = 'date';
+        dateInput.name = 'date';
 
         const roomLabel = document.createElement('label');
         roomLabel.textContent = 'Salle:';
         const roomInput = document.createElement('input');
         roomInput.type = 'text';
+        roomInput.name = 'room';
 
         const professorLabel = document.createElement('label');
         professorLabel.textContent = 'Professeur:';
         const professorInput = document.createElement('input');
         professorInput.type = 'text';
+        professorInput.name = 'professor';
 
         const removeButton = document.createElement('button');
         removeButton.className = 'remove-button';
@@ -48,11 +52,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function saveKholles() {
         const kholles = [];
         kholleContainer.querySelectorAll('.kholle').forEach(kholleDiv => {
+            const day = kholleDiv.querySelector('input[name="day"]').value;
+            const date = kholleDiv.querySelector('input[name="date"]').value;
+            const room = kholleDiv.querySelector('input[name="room"]').value;
+            const professor = kholleDiv.querySelector('input[name="professor"]').value;
+
             const kholle = {
-                day: kholleDiv.querySelector('input[type="text"]').value,
-                date: kholleDiv.querySelector('input[type="text"]').value,
-                room: kholleDiv.querySelector('input[type="text"]').value,
-                professor: kholleDiv.querySelector('input[type="text"]').value
+                day: day,
+                date: date,
+                room: room,
+                professor: professor
             };
             kholles.push(kholle);
         });
@@ -69,24 +78,28 @@ document.addEventListener('DOMContentLoaded', function() {
             dayLabel.textContent = 'Jour:';
             const dayInput = document.createElement('input');
             dayInput.type = 'text';
+            dayInput.name = 'day';
             dayInput.value = kholle.day;
 
             const dateLabel = document.createElement('label');
             dateLabel.textContent = 'Date:';
             const dateInput = document.createElement('input');
-            dateInput.type = 'text';
+            dateInput.type = 'date';
+            dateInput.name = 'date';
             dateInput.value = kholle.date;
 
             const roomLabel = document.createElement('label');
             roomLabel.textContent = 'Salle:';
             const roomInput = document.createElement('input');
             roomInput.type = 'text';
+            roomInput.name = 'room';
             roomInput.value = kholle.room;
 
             const professorLabel = document.createElement('label');
             professorLabel.textContent = 'Professeur:';
             const professorInput = document.createElement('input');
             professorInput.type = 'text';
+            professorInput.name = 'professor';
             professorInput.value = kholle.professor;
 
             const removeButton = document.createElement('button');
@@ -103,6 +116,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     loadKholles();
+
+    // Rediriger vers AffichageKholle.html au clic sur le bouton Voir les Kholles
+    viewKholleBtn.addEventListener('click', function() {
+        window.location.href = 'AffichageKholle.html';
+    });
 
     // Rediriger vers modification.html au clic sur le bouton Retour
     returnBtn.addEventListener('click', function() {
