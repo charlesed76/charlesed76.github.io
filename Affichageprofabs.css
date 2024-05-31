@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #004d86; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+}
+
+.navbar {
+    background-color: #003f6a; /* Couleur de la barre de navigation */
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.prof-absent {
+    background-color: #005999; /* Couleur de fond des professeurs absents */
+    border: 2px solid #004d86;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white; /* Couleur du texte des professeurs absents */
+}
+
+.prof-absent span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#profAbsDisplayContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les éléments horizontalement */
+}
