@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Rediriger vers Affichageprofabs.html au clic sur le bouton "Voir les Professeurs Absents"
     viewProfAbsBtn.addEventListener('click', function() {
-        window.location.href = 'Affichageprofabs.html';
+        window.location.href = 'AffichageProfabs.html';
     });
 });
 
