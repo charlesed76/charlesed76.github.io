@@ -22,7 +22,7 @@ body {
     align-items: center;
     margin-top: 50px;
     padding: 20px;
-    max-width: 600px;
+    max-width: 800px; /* Augmentez la largeur selon vos besoins */
     margin: auto;
 }
 
@@ -33,14 +33,16 @@ body {
 }
 
 .textbox {
-    width: 80%;
-    height: 200px;
+    width: 600px; /* Taille fixe en largeur */
+    height: 400px; /* Taille fixe en hauteur */
     padding: 10px;
     font-size: 16px;
     border: 2px solid #004d86;
     border-radius: 5px;
     margin-bottom: 20px;
     font-family: serif; /* Police par défaut pour la zone de texte */
+    box-sizing: border-box; /* Assure que le padding est inclus dans la taille totale */
+    resize: none; /* Empêche le redimensionnement de la zone de texte */
 }
 
 .button {
