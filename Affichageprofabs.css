@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #004d86; /* Couleur de fond */
     color: white; /* Couleur du texte */
+    font-size: 20px; /* Taille de la police par défaut */
 }
 
 .navbar {
@@ -33,6 +34,7 @@ body {
     width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white; /* Couleur du texte des professeurs absents */
+    font-size: 20px; /* Taille de la police pour les professeurs absents */
 }
 
 .prof-absent span {
