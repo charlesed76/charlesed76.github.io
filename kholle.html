@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kholles</title>
-    <link rel="stylesheet" href="kholle.css"> <!-- Utilisation du fichier kholle.css -->
+    <link rel="stylesheet" href="kholle.css">
 </head>
 <body>
     <div class="navbar">
@@ -12,12 +12,16 @@
     </div>
     <div class="button-container">
         <button id="returnBtn" class="button">Retour</button>
+        <button id="addKholleBtn" class="button">Ajouter une Kholle</button>
         <button id="viewKholleBtn" class="button">Voir les Kholles</button>
     </div>
     <div class="container">
-        <button id="addKholleBtn" class="button">Ajouter une Kholle</button>
         <div id="kholleContainer" class="flex-container"></div>
         <button id="saveKholleBtn" class="button">Enregistrer</button>
+        <button id="cmtMarcheBtn" class="button">Comment ça marche ?</button>
+        <p id="cmtMarcheText" style="display: none;">
+            Ici, vous pouvez ajouter et consulter les kholles programmées. Cliquez sur "Ajouter une Kholle" pour ajouter une nouvelle kholle, et sur "Enregistrer" pour sauvegarder les informations.
+        </p>
     </div>
     <script src="kholle.js"></script>
 </body>
