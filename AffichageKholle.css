@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #004d86; /* Couleur de fond */
-    color: white; /* Couleur du texte */
+    background-color: #004d86; 
+    color: white; 
 }
 
 .navbar {
-    background-color: #003f6a; /* Couleur de la barre de navigation */
+    background-color: #003f6a; 
     padding: 20px;
     text-align: center;
 }
@@ -25,14 +25,15 @@ body {
 }
 
 .kholle {
-    background-color: #005999; /* Couleur de fond des kholles */
+    background-color: #005999; 
     border: 2px solid #004d86;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
     width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: white; /* Couleur du texte des kholles */
+    color: white; 
+    font-size: 20px; 
 }
 
 .kholle span {
@@ -43,5 +44,5 @@ body {
 #kholleDisplayContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrer les éléments horizontalement */
+    justify-content: center; 
 }
