@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const saveKholleBtn = document.getElementById('saveKholleBtn');
     const viewKholleBtn = document.getElementById('viewKholleBtn');
     const returnBtn = document.getElementById('returnBtn');
+    const cmtMarcheBtn = document.getElementById('cmtMarcheBtn');
+    const cmtMarcheText = document.getElementById('cmtMarcheText');
 
     // Ajouter une kholle
     addKholleBtn.addEventListener('click', function() {
@@ -125,5 +127,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Rediriger vers modification.html au clic sur le bouton Retour
     returnBtn.addEventListener('click', function() {
         window.location.href = 'modification.html';
+    });
+
+    // Afficher/Masquer le paragraphe Comment ça marche
+    cmtMarcheBtn.addEventListener('click', function() {
+        if (cmtMarcheText.style.display === 'none') {
+            cmtMarcheText.style.display = 'block';
+        } else {
+            cmtMarcheText.style.display = 'none';
+        }
     });
 });
